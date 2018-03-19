@@ -1,0 +1,275 @@
+
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'cac_champagneregular';
+    src: url('font/cac_champagne-webfont.eot');
+    src: url('font/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/cac_champagne-webfont.woff') format('woff'),
+         url('font/cac_champagne-webfont.ttf') format('truetype'),
+         url('font/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+}
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: "good_times";
+
+    src: url('font/good times rg.ttf') format('truetype'),
+         
+}
+
+body
+{
+	background: rgb(45,45,45);
+}
+h1
+{
+	color:white;
+	font-family: "Good Times", Arial;
+	text-align: center;
+
+}
+h2
+{
+	color:rgb(40,174,115);
+	font-family: "Good Times", Arial;
+}
+h3
+{
+	color:white;
+	font-family: "Good Times", Arial;
+}
+h4
+{
+	color:white;
+	font-family: "Good Times", Arial;
+}
+p
+{
+	color :white;
+	font-family: "Good Times", Arial;
+	text-align: justify;
+}
+div
+{
+	border-radius: 10px;
+
+}
+section
+{
+	border:2px solid rgb(40,174,115);;
+	border-radius: 10px;
+	margin-left: 0px;
+
+}
+.navmenu
+{
+	position: fixed;
+	border:2px solid rgb(40,174,115);;
+	/*border-radius: 10px;*/
+	color: #c0c0c0;
+	/*border-color: #1E2429;*/
+	overflow-x: hidden;
+	overflow-y: hidden;
+    transition: 0.5s;
+	width: 40px;
+	height: 100%;
+	z-index: 1;
+	background: black;
+}
+.navmenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(129,194,52);;
+    margin:0 auto;
+    object-position: center;
+    padding: 0;
+    width: 100px;
+
+}
+.slogan
+{
+	color:white;
+	font-family:  "cac_champagneregular", Arial;
+	font-style: italic;
+	text-align: center;
+}
+.logo
+{
+	width: 200
+
+}
+.signature
+{
+	text-align: right;
+	font-family: 'cac_champagneregular',Arial;
+}
+
+.nav > li {
+	position: relative;
+	display: block;
+	text-align: left;
+
+}/*
+.navmenu-default .navmenu-nav>li>a:hover, 
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, 
+.navmenu-default .navmenu-nav>li>a:focus, 
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
+color: #ffffff; 
+background-color: blue;
+}*//*#C59A6D;*/
+.navmenu .nav>li>a:hover/*, 
+.navmenu .nav>li>a:focus*/ {
+color: #ffffff; /*#C59A6D;*/
+background-color: transparent;
+}
+/*.navmenu-default .navmenu-nav>.active>a, 
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a, 
+.navmenu-default .navmenu-nav>.active>a:hover, 
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover, 
+.navmenu-default .navmenu-nav>.active>a:focus, 
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus  {
+color: rgb(129,194,52);
+background-color: transparent;
+}*/
+.navmenu .nav>li>a{
+	color: rgb(40,174,115);/*#ffffff;*/
+	text-transform: uppercase;
+
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 50px;
+}
+.navmenu .nav>li>a:focus
+{
+	color: rgb(129,194,52);
+	background-color: transparent;
+}
+.matiere .domaine>h2:hover
+{
+	color:white;
+}
+.matiere .contenu>h3
+{
+	color:rgb(129,194,52);
+	text-align: center;
+}
+.matiere .contenu>h4
+{
+	color:black;
+}
+.matiere
+{
+	background: white;
+}
+.lang
+{
+
+}
+.dropdown-lang {
+    display: none;
+    transition: 0.3s;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 150px;
+     margin-top: 0px;
+    z-index: 1;
+}
+.dropdown-sim {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 150px;
+     margin-top: 0px;
+    z-index: 1;
+}
+.dropdown-nfo {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 150px;
+    margin-top: 0px;
+    z-index: 1;
+}
+.lang:hover{
+/*	border-left: 1px solid red;*/
+}
+.lang:hover .dropdown-lang {
+    display: block;
+
+}
+.nfo:hover .dropdown-nfo {
+    display: block;
+}
+.sim:hover .dropdown-sim {
+    display: block;
+}
+#main{
+	transition: margin-left .5s;
+	transition: margin .5s;
+	padding: 16px;
+	margin-left: 40px
+	
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+
+.closebtn:hover{
+	color :rgb(129,194,52);
+}
+.closebtn{
+	color :rgb(40,174,115);
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    top: 0;
+    right: 3px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(40,174,115);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.container:hover .container>div
+{
+	background-color: rgb(129,194,52);
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
